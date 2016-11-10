@@ -1,0 +1,136 @@
+*{padding: 0;margin: 0}
+html body{width: 100%;  height: 100%; background: #f6f7f7;}
+.cf:after{content: "";display: table;clear: both; }
+.cf{*zoom: 1;}
+
+/*头部*/
+.top{
+    width: 100%;
+    height: 45px;
+    background: #0f7cbf;
+}
+.top-1{
+    width: 95%;
+    height: 45px;
+    margin: 0 auto;
+}
+.logo{
+    float: left;
+    background: url("../images/logo.png")no-repeat 0 0;
+    background-size: 100% 45px;
+    width: 40%;
+    height: 45px;
+}
+.top-1-right{
+    float: right;
+    height: 45px;
+}
+.top-1-right a{
+    font-size: 14px;
+    line-height: 45px;
+    color: white;
+    padding-left: 15px;
+}
+/*验证码*/
+.one-text4{
+    width:100px;height: 48px;
+    background: url("../images/yzm.jpg") no-repeat;
+    background-size:100px 48px; position: absolute;right: 1px;top: 1px
+}
+
+/*文本内容*/
+.show{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px 30px 0;}
+
+.one{
+    width: 100%;
+    position: relative;
+    margin-bottom: 30px;
+    background: #eeeef3;}
+
+.one-txt{
+    background: #eeeef3;
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    padding: 0 50px;
+    outline: none;
+    border: 1px solid #adadad;
+    font-size: 14px;
+    font-family: "微软雅黑"}
+
+.one-text{
+    width:25px;
+    height: 25px;
+    background: url("../images/shouji.png") no-repeat;
+    -webkit-background-size:cover;
+    background-size:cover;
+    position: absolute;
+    left: 12px;top: 12px}
+
+.one-text1{
+    width:25px;
+    height: 25px;
+    background: url("../images/mima.png") no-repeat;
+    -webkit-background-size:cover;
+    background-size:cover; position: absolute;left: 12px;top: 12px}
+
+.one-text3{
+    width:25px;
+    height: 25px;
+    background: url("../images/aixin.png") no-repeat;
+    -webkit-background-size:cover;
+    background-size:cover;
+    position: absolute;
+    left: 12px;top: 12px}
+
+.one-text2{
+    width:25px;
+    height: 25px;
+    background: url("../images/zhengque.png") no-repeat;
+    -webkit-background-size:cover;
+    background-size:cover;
+    position: absolute;
+    left: 12px;top: 12px}
+/*按钮*/
+.submit{
+    width: 100%;
+    height: 50px;
+    background: #3e8be0;
+    outline: none;
+    border: 0 none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: "微软雅黑";
+    color: white}
+
+.a-submit{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 0 20px 0 }
+
+.submit-1{
+    float: left;
+    font-size: 14px;
+    font-family: "微软雅黑";}
+
+.a-submit-1{
+    float: right;
+    font-size: 14px;
+    font-family: "微软雅黑";}
+
+.ter{
+    width: 70%;
+    font-size: 12px;
+    font-family: "微软雅黑";
+    margin: auto}
+
+.ter-1{
+    float: left;
+    color: #8a8a8a;}
+
+.ter-2{
+    float: right;
+    color: #8a8a8a;}

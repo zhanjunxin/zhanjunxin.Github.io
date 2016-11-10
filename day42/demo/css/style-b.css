@@ -1,0 +1,254 @@
+*{padding: 0;margin: 0}
+html body{height: 100%;width: 100%}
+.content{ background: #f6f7f7;}
+.cf:after{
+    content: "";
+    display: table;
+    clear: both; }
+.cf{*zoom: 1;}
+/*头部*/
+.tab-item .icon-home1{
+    width:30px ;
+    height: 45px;
+    background: url("../images/a.png") no-repeat 4px -28px;          background-size:118px 52px;}
+
+.tab-item .icon-me1{
+    width:30px ;
+    height: 45px;
+    background: url("../images/a.png") no-repeat -30px 0px;          background-size:118px 52px;}
+
+.tab-item .icon-star1{
+    width:30px ;
+    height: 50px;
+    background: url("../images/a.png") no-repeat -60px -29px;        background-size:118px 52px;}
+
+.tab-item .icon-settings1{
+    width:30px ;
+    height: 50px;
+    background: url("../images/a.png") no-repeat -90px -29px;        background-size:118px 52px;}
+
+
+.head{
+    height: 40px;
+    width: 100%;
+    background: #4a4a4a;
+    box-sizing: border-box;
+    padding: 0 20px}
+
+.head-left{
+    float: left;
+    display:block;
+    height: 100%;
+    width: 230px;
+    line-height: 40px;
+    font-size: 12px;
+    font-family: "微软雅黑";
+    color: #e2e2e2;
+    background: url("../images/b.png") no-repeat ;                   background-position: 190px  10px;
+    background-size:20px 20px;}
+
+.head-right{
+    float: right;
+    color:#e2e2e2;
+    line-height: 40px }
+
+/*头部*/
+.top-log{
+    width: 100%;
+    height: 50px;
+    background: #3e8be0;
+    box-sizing: border-box;
+    padding: 0 20px 0 10px}
+
+.log{
+    box-sizing: border-box;
+    float: left;
+    display:block;
+    width:130px;
+    height: 40px;
+    margin: 4px 0;
+    background: url("../images/logo.png");                          -webkit-background-size:cover;
+    background-size:cover;}
+
+.top-left{
+    float: right;
+    display:block;
+    width:90px;
+    height: 50px;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-size: 14px;
+    font-family: "微软雅黑";}
+
+.top-right{
+    float:right;
+    display:block;
+    width:40px;
+    height: 50px;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-size: 14px;
+    font-family: "微软雅黑";}
+
+.footer{
+    width: 60%;
+    font-size: 14px;
+    font-family: "微软雅黑";
+    line-height: 27px;
+    color: #787878;
+    margin: auto;
+}
+
+/*-------*/
+.tab-label{color: #929292}
+
+.active{color: #0894ec}
+
+.nav{
+    width: 95%;
+    box-sizing: border-box;
+    padding: 20px 10px 10px;
+    margin:0 auto 40px;}
+
+.nav span{
+    width: 33.33%;
+    height: 25px;
+    display: block;
+    float: left;
+    text-align: center;
+    border: 1px solid blue;
+    font-size: 14px;
+    font-family: "微软雅黑";
+    line-height: 25px;
+    background: white;
+    color: #1e93ed}
+
+.nav .nav-active{
+    background: #2798fc;
+    color: white}
+
+.active-all{position: relative}
+
+.active-one{
+    box-sizing: border-box;
+    width:100%;
+    background: #eeeef3;
+    position: absolute;left: 0;
+    top:0px; }
+
+.active-bg{
+    width: 100%;
+    background: white;
+    margin-bottom: 12px}
+
+.active-main{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 10px 20px;}
+
+.active-tip{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: "微软雅黑";
+    padding: 10px 0 0 0 }
+
+.active-portall{
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 20px;
+    border-top:1px dashed #ccc;
+    color: #f60;
+    font-size: 14px;
+    font-family: "微软雅黑";
+    padding: 10px 0 10px 0}
+
+.active-port{width: 20%;float: left}
+
+.active-port6{width: 17%;float: left}
+
+.active-port4{width: 22%;float: left}
+
+.active-port5{width: 41%;float: left;text-align: right}
+
+.active-pre{float: left;width: 83%;height: 6px;background: #adadad;}
+
+.active-prebg{width: 23%;height: 100%;background: #2798fc;}
+
+.active-pretext{
+    width:17%;
+    text-align: right;
+    float: right;
+    font-size: 12px;
+    font-family:"微软雅黑";
+    line-height: 3px;
+    color: #adadad}
+
+/*进度条为15%*/
+.active-prebg1{
+    width: 15%;
+    height: 100%;
+    background: #2798fc;}
+
+.active-finish{
+    width: 100%;
+    float: left;
+    padding: 0 0 10px 0}
+
+.active-finishleft{
+    float: left;
+    width: 20%;
+    font-size: 14px;
+    font-family:"微软雅黑";
+    text-align: left ;
+    color:#8a8a8a}
+
+.active-finishright{
+    float:right;
+    width: 50%;
+    font-size: 14px;
+    font-family:"微软雅黑";
+    text-align: right ;
+    color: #8a8a8a}
+
+.foot{
+    display: block;
+    width: 100%;
+    height: 30px;
+    background: #eeeef3;
+    text-align: center;
+    font-size: 14px;
+    font-family:"微软雅黑";
+    color:#8a8a8a;}
+
+.active-portall1{width: 100%;}
+
+.active-port1{width: 50%;float: left;color:#8a8a8a }
+
+.active-port2{width: 50%;float: left; }
+
+.active-portbtn{
+    display: block;
+    width: 96%;
+    height: 25px;
+    margin: 10px auto 0;
+    border-radius: 5px;
+    background: #8a8a8a;
+    text-align: center;
+    font-size: 14px;
+    font-family:"微软雅黑";
+    color:white;
+    line-height: 25px}
+
+.active-last{
+    width: 100%;
+    height: 50px;
+    background: white;
+    text-align: center;
+    font-size: 14px;
+    font-family:"微软雅黑";
+    line-height: 50px}

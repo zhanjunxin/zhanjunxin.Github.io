@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>善行创投</title>
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+    <link rel="stylesheet" href="css/style-b.css">
+    <link rel="stylesheet" href="lib/swiper-3.4.0.min.css">
+</head>
+<body>
+<div class="page">
+    <!--框架底部-->
+    <nav class="bar bar-tab">
+        <a class="tab-item active" href="../demo/a.html">
+            <span class="icon icon-home1"></span>
+            <span class="tab-label">首页</span>
+        </a>
+        <a class="tab-item" href="../demo/B.html">
+            <span class="icon icon-me1"></span>
+            <span class="tab-label active">投资理财</span>
+        </a>
+        <a class="tab-item" href="../demo/c.html">
+            <span class="icon icon-star1"></span>
+            <span class="tab-label">我的财富</span>
+        </a>
+        <a class="tab-item" href="../demo/d.html">
+            <span class="icon icon-settings1"></span>
+            <span class="tab-label">关于善行创投</span>
+        </a>
+    </nav>
+
+    <!--//内容区域-->
+    <div class="content">
+        <!--头部-->
+        <div class="top-log cf">
+            <a href="https://www.taobao.com/" class="log"></a>
+            <a href="../demo/c.html" class="top-right">登录</a>
+            <a href="../demo/f.html" class="top-left">免费注册</a>
+        </div>
+
+        <!--项目列表-->
+        <div class="nav">
+            <span class="nav-active">项目列表</span>
+            <span >善行宝</span>
+            <span >转让标</span>
+        </div>
+
+
+        <!--内容-->
+        <div class="active-all">
+            <div class="active-one">
+                <div id="proList">
+                    <!--文本内容-->
+                </div>
+
+                <a href="#" class="foot">加载更多</a>
+            </div>
+
+            <!--善行宝页面-->
+            <div class="active-one" style="display: none;">
+                <div class="active-bg">
+                    <div class="active-main">
+                        <div class="active-tip">善行(红木)宝.货押</div>
+                        <div class="active-portall cf">
+                            <div class="active-portall1 cf">
+                                <div class="active-port1">状态</div>
+                                <div class="active-port1">已销售额</div>
+                            </div>
+                            <div class="active-portall1 cf">
+                                <div class="active-port2">停止</div>
+                                <div class="active-port2">￥13000000.00</div>
+                            </div>
+                            <a href="#" class="active-portbtn">立即投资</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="active-bg" >
+                    <div class="active-main">
+                        <div class="active-tip">善行(车贷)宝.货押</div>
+                        <div class="active-portall cf">
+                            <div class="active-portall1 cf">
+                                <div class="active-port1">状态</div>
+                                <div class="active-port1">已销售额</div>
+                            </div>
+                            <div class="active-portall1 cf">
+                                <div class="active-port2">停止</div>
+                                <div class="active-port2">￥0.00</div>
+                            </div>
+                            <a href="#" class="active-portbtn">立即投资</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--转让标页面-->
+            <div class="active-one" style="display: none;">
+                <div class="active-last">暂无数据</div>
+            </div>
+            <!--这是活标-->
+        </div>
+
+    </div>
+
+
+<script src="lib/zepto.min.js"></script>
+<script src="lib/swiper-3.4.0.min.js"></script>
+<script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+    <script>
+
+
+        $(function () {
+            var page=1;
+
+            $('.foot').on('click',function () {
+                page++;
+                $.get('http://192.168.1.123:8080/api/Pro?p='+page,function (data) {
+                    if((data.list).length==0){
+                        $('.foot').html('全部加载完毕')
+                    }else {
+                        pzo(data)
+                    }
+
+                },'json');
+
+            });
+
+
+            $.get('http://192.168.1.123:8080/api/Pro',function (data) {
+                pzo(data)
+
+            },'json');
+
+
+            $('.nav span').click(function () {
+               $(this).addClass('nav-active').siblings().removeClass();
+                var index=$('.nav span').index(this);
+                $('.active-one').eq(index).css({'display':'block'}).siblings().css({'display':'none'})
+            });
+
+
+        });
+
+
+//拼接字符串
+        function pzo(data) {
+            var html='';
+            for(var i in data.list){
+                var pro=data.list[i];
+                if(pro.endTime){
+                    html+='<div class="active-bg">'+
+                                '<div class="active-main">'+
+                                    '<div class="active-tip">'+pro.name+'</div>'+
+                                    '<div class="active-portall cf">'+
+                                        '<div class="active-port">'+pro.yearGet+'%'+'</div>'+
+                                        '<div class="active-port6">'+pro.totalDate+'</div>'+
+                                        '<div class="active-port4">￥'+pro.totalMoney/10000+'.00万'+'</div>'+
+                                        '<div class="active-port5">'+pro.repayType+'</div>'+
+                                    '</div>'+
+                                    '<div class="active-finish">'+
+                                        '<div class="active-finishleft">还款中</div>'+
+                                        '<div class="active-finishright">满标时间：'+pro.endTime+'</div>'+
+                                    '</div>'+
+                                '</div>'+
+                            '</div>'
+
+                }else { html+='<div class="active-bg">'+
+                    '<div class="active-main">'+
+                        '<div class="active-tip">'+pro.name+'</div>'+
+                        '<div class="active-portall cf">'+
+                            '<div class="active-port">'+pro.yearGet+'%'+'</div>'+
+                            '<div class="active-port6">'+pro.totalDate+'</div>'+
+                            '<div class="active-port4">￥'+pro.totalMoney/10000+'.00万'+'</div>'+
+                            '<div class="active-port5">'+pro.repayType+'</div>'+
+                        '</div>'+
+                        '<div class="active-pre">'+
+                            '<div class="active-prebg" style="width:${Math.floor(pro.currentMoney/pro.totalMoney*100)}%"></div>'+
+                        '</div>'+
+                        '<div class="active-pretext">进度'+Math.floor(pro.currentMoney/pro.totalMoney*100)+'%'+'</div>'+
+                    '</div>'+
+                '</div>'}
+
+            }
+            $('#proList').append(html)
+        }
+
+    </script>
+</body>
+</html>

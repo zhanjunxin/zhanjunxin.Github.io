@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>詹俊鑫</title>
+  <style>
+    *{
+      padding: 0;margin: 0;
+    }
+    .nav-top{
+      width: 100%;height: 0.8rem;
+    }
+    .cf{
+      display: table;clear: both;content: "";
+    }
+    .cf{
+      *zoom:1;
+    }
+
+  .nav-left{
+    width: 2.6rem;height: 0.36rem;margin-left: 0.26rem;float: left;font-size: 0.60rem;
+  }
+  .nav-center{
+    line-height: 0.29rem;font-size: 0.36rem;text-align: center;float: left;margin-top: 0.29rem;
+  }
+  .nav-right{
+    margin-right: 0.26rem;float: right;margin-top: 0.16rem;
+  }
+  .nav-right div{
+      width: 0.38rem;height: 0.07rem;background: #666666;border-radius: 0.25rem;margin-top: 0.08rem;
+  }
+
+
+.center{
+  width: 100%;height: 2.9rem;
+  border: 1px solid #999;
+  border-left: none;
+  border-right: none;
+  background: #F4F4F4;
+  overflow: hidden;
+  position: relative;
+  }
+.center .logo{
+  background: url('../day38/images/logo.png')no-repeat;
+  width: 6rem;height: 2.7rem;margin: 0.2rem 0.2rem;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+.size{
+  font-size: 0.2rem;
+  color: white;
+  float: left;
+  margin-left: .1rem;
+  text-align: center;
+  line-height:.7rem;
+}
+
+.lp{
+  width: 1.4rem;height: .4rem;text-align: center;line-height: .4rem;
+  background: #d7fcd2;font-size: 0.25rem;color: #279560;
+  position: absolute;top: 0.1rem;
+  right: -.35rem;
+  transform:rotate(40deg);
+  /*-ms-transform:rotate(40deg); */
+  -webkit-transform:rotate(40deg);
+}
+
+.logo-left{
+  width: 2.9rem;
+  height: 0.63rem;
+  position: absolute;
+  top: 0.25rem;
+  left: 0.25rem;
+}
+
+.logo-1{
+  background: url("../day38/images/logo-1.png") no-repeat center;
+  background-size: cover;
+  width: 0.63rem;
+  height:0.63rem;
+  float: left;
+  vertical-align: middle;
+  overflow: hidden;
+  line-height:.7rem;
+}
+
+.center-1{
+  position: absolute;
+  top: 1.3rem;
+  left: 1.5rem;
+  height: .86rem;
+  position: absolute;left: .9rem;
+}
+
+.logo-2{
+  background: url("../day38/images/logo-2.png") no-repeat center;
+  background-size: cover;
+  width: .78rem;
+  height: .86rem;
+  float: left;
+}
+.logo-22{
+  float: left;
+  width: .01rem;
+  height: .62rem;
+  background: #96d9bf;
+  margin-top: .2rem;
+  margin-right: .1rem;
+  margin-left: .3rem;
+}
+.size-1{
+  padding-left: 1.4rem;
+}
+.js{
+  width: 6rem;
+  height: 3.3rem;
+  background: white;
+  margin: auto;
+  position: relative;
+  display: none;
+}
+.logo-3{
+  background: url("../day38/images/logo-3.png") no-repeat center;
+  background-size: cover;
+  width: 2.22rem;
+  height: 2.22rem;
+  margin: auto ;
+}
+
+.botton{
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+}
+
+.botton p {
+  font-size: .25rem;height: .8rem;line-height: .8rem;
+  width: 6.2rem;
+  margin-left: .2rem;
+  border-bottom: .01rem solid #dddddd;
+  padding-left: .2rem;
+}
+
+.btn{
+  width: 6rem;
+  height: .8rem;
+  background: #ff6600;
+  color: white;font-size:.3rem ;
+  text-align: center;
+  line-height: .8rem;
+  margin:.6rem auto 2.9rem;
+}
+
+.ck{
+    margin-top: .2rem;
+}
+.ck a {
+  text-decoration: none;
+  font-size: .26rem;
+  margin: auto;
+  display: block;
+  width: 2rem;
+}
+
+
+  </style>
+</head>
+<body>
+
+<div class="nav-top cf">
+  <div class="nav-left" id="left"><</div>
+  <div class="nav-center">优惠券</div>
+  <div class="nav-right">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+
+<div class="center cf">
+  <!-- 背景图片 -->
+  <div class="logo">
+    <!-- 礼品卷 -->
+    <div class="lp">礼品卷</div>
+  </div>
+  <!-- logo-1+文字 -->
+  <div class="logo-left cf">
+    <div class="logo-1"></div>
+    <div class="size">美乐乐家具旗舰店</div>
+  </div>
+  <!-- logo-2+文字 -->
+<div class="center-1 cf">
+  <div class="logo-2"></div>
+  <div class="logo-22"></div>
+    <div class="size-1">
+      <p style="font-size: 0.35rem;color: white;width: 4rem;margin-top:.1rem ">金秋10月优惠券</p>
+      <p style="font-size: 0.2rem;color: white;width:4.5rem;">领取后1天生效，有效期30天</p>
+    </div>
+</div>
+<div class="js" id="js">
+  <div class="logo-3"></div>
+  <p style="font-size: .2rem ;text-align: center;width: 6rem;margin-top: .2rem">mll15613213546</p>
+  <p style="font-size: .2rem;text-align: center;width: 6rem">将本页展示给店员即可使用</p>
+</div>
+</div>
+
+<div class="botton">
+  <p style="">使用说明 <span style="padding-left: 4.3rem;font-size: 0.5rem"> ></span></p>
+  <p style="">适用门店 <span style="padding-left: 4.3rem;font-size: 0.5rem"> ></span></p>
+  <p style="">客服电话 <span style="padding-left: 4.3rem;font-size: 0.5rem"> ></span></p>
+</div>
+
+<div class="btn" id="btn">领取</div>
+
+<p class="ck"><a href="#">查看我的钱包>></a></p>
+
+
+
+<script>
+
+new function () {
+  var _self = this;
+  _self.width = 640; // 设置默认最大宽度
+  _self.fontSize = 100; // 默认字体大小
+  _self.widthProportion = function () {
+      var p = (document.body && document.body.clientWidth || document.getElementsByTagName("html")[0].offsetWidth) / _self.width;
+      return p;
+  };
+  _self.changePage = function () {
+      document.getElementsByTagName("html")[0].setAttribute("style", "font-size:" + _self.widthProportion() * _self.fontSize + "px !important");
+  }
+  _self.changePage();
+  window.addEventListener('resize', function () {
+      _self.changePage();
+  }, false);
+};
+
+  var btn = document.getElementById('btn');
+  var js = document.getElementById('js');
+
+  btn.onclick=function(){
+    js.style.display='block';
+    btn.style.display='none';
+  }
+// <返回领取
+  var left = document.getElementById('left');
+    left.onclick=function(){
+    js.style.display='block';
+    // left.style.display='none';
+  }
+
+</script>
+
+
+</body>
+</html>

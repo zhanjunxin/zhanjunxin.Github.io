@@ -1,0 +1,302 @@
+*{padding: 0;margin: 0}
+.content{background: #e0e6f2;}
+html body{height: 100%;width: 100%;
+    margin: 0 auto}
+.cf:after{content: "";display: table;clear: both; }
+.cf{*zoom: 1;}
+.tab-item .icon-home1{
+    width:30px ;
+    height: 45px;
+    background: url("../images/a.png") no-repeat 4px -29px;           background-size:118px 52px;}
+
+.tab-item .icon-me1{
+    width:30px ;
+    height: 50px;
+    background: url("../images/a.png") no-repeat -30px -29px;         background-size:118px 52px;}
+
+.tab-item .icon-star1{
+    width:30px ;
+    height: 50px;
+    background: url("../images/a.png") no-repeat -60px -29px;         background-size:118px 52px;}
+
+.tab-item .icon-settings1{
+    width:30px ;
+    height: 50px;
+    background: url("../images/a.png") no-repeat -90px 0px;           background-size:118px 52px;}
+
+.top-log{
+    width: 100%;
+    height: 50px;
+    background: #3e8be0;
+    box-sizing: border-box;
+    padding: 0 20px 0 10px}
+
+.log{
+    box-sizing: border-box;
+    float: left;
+    display:block;
+    width:130px;
+    height: 40px;
+    margin: 4px 0;
+    background: url("../images/logo.png");                            -webkit-background-size:cover;background-size:cover;}
+
+.top-right-1{
+    float: right;
+    display:block;
+    width:90px;
+    height: 50px;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-size: 14px;
+    font-family: "微软雅黑";}
+
+.top-right-2{
+    float:right;
+    display:block;
+    width:40px;
+    height: 50px;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-size: 14px;
+    font-family: "微软雅黑";}
+
+.tab-label{
+    color: #8a8a8a}
+
+.active{color:#3e8be0 }
+
+/*什么是善行创投*/
+.minder{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0 }
+
+.minder-one{
+    display: block;
+    float: left;
+    width: 15%;
+    height: 2px;
+    margin-top:14px;
+    background: #8194b0}
+
+.minder-two{
+    display: block;
+    float: left;
+    width: 70%;
+    box-sizing: border-box;
+    height: 30px;
+    border-radius:10px;
+    background: #8194b0;
+    text-align: center;
+    font-size: 16px;
+    font-family: "微软雅黑";
+    font-weight: 500;
+    color: #fbfbfb;
+    line-height: 30px}
+
+.minder-three{
+    display: block;
+    float: right;
+    width: 15%;
+    height: 2px;
+    margin-top:14px ;
+    background:  #8194b0;}
+
+
+.text{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 10px;
+    font-family: "微软雅黑";
+    font-weight: 500;
+    font-size: 14px; }
+/*图片*/
+.imgage{width: 100%;}
+
+.image img{width: 100%}
+
+/*<!--什么是新手投资     -->*/
+.info{
+    width: 100%;
+    box-sizing: border-box;
+    padding:10px 10px 5px 10px;
+    font-weight: 500;
+    font-family: "微软雅黑";
+    font-size: 14px; }
+
+.info-1{
+    color: #253ff7;
+    font-size: 16px;
+    padding: 0 0 5px 0}
+
+.info-1-txt{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 0 10px 0;
+    color:black;}
+
+.span{
+    width: 30px;
+    height: 30px;
+    border: 5px solid   #024783;
+    color: white;
+    border-radius: 50%;
+    background: #024783;
+}
+
+.why-text{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px  0;
+    border-top:1px solid silver;
+    border-bottom: 1px solid #d1d1d1}
+
+.why-text-1{
+    color: #fd4716;
+    width: 18%;
+    box-sizing: border-box;
+    float: left;
+    font-family: "微软雅黑";
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.why-text-right{
+    font-family: "微软雅黑";
+    font-weight: 500;
+    font-size: 14px;
+    box-sizing: border-box;
+    padding:0 0 0 10px;
+    border-left: 1px solid silver ;
+    width: 82%;
+    float: right;
+    color:black;}
+
+
+.why-text2{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px 0;
+    border-bottom: 1px solid #dfdfdf
+}
+
+.why-text3{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px 0;
+    border-bottom: 1px solid #d1d1d1
+}
+
+
+
+.window{
+    width: 100%;
+    text-align: center;
+    font-family: "微软雅黑";
+    font-size: 14px;
+    box-sizing: border-box;
+    padding: 10px 0 0 0;
+    color:black;
+    font-weight: 500; }
+
+.window-1{
+    width: 100%;
+    text-align: center;
+    font-family: "微软雅黑";
+    font-size: 14px;
+    box-sizing: border-box;
+    color:black;
+    font-weight: 500; }
+
+.window-png{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 0 }
+
+.left-1{
+    width: 50px;
+    height: 50px;
+    float: left;
+    box-sizing: border-box;
+    background: url("../images/tubiao.png") no-repeat 0 -10px;}
+
+.left-text{
+    float: left;
+    font-family: "瀹嬩綋";
+    font-size: 14px;
+    box-sizing: border-box;
+    padding: 0 0 0 10px;
+    color:black;
+    width: 80%}
+
+.left-2{
+    width: 50px;
+    height: 50px;
+    float: left;
+    box-sizing: border-box;
+    background: url("../images/tubiao.png") no-repeat 0 -73px;}
+
+.left-3{
+    width: 50px;
+    height: 50px;
+    float: left;
+    box-sizing: border-box;
+    background: url("../images/tubiao.png") no-repeat 0          -138px;}
+
+.left-4{
+    width: 50px;
+    height: 50px;
+    float: left;
+    box-sizing: border-box;
+    background: url("../images/tubiao.png") no-repeat 0          -210px;}
+
+.image-2{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 10px 0 10px}
+
+.image-2 img{width: 100%}
+
+/*底部文本*/
+.bottom{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px 10px 0}
+
+
+.tom{
+    width: 100%;
+    color: #0f7cbf;
+    font-weight: 500;
+    font-family:"微软雅黑";
+    font-size: 16px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0}
+
+.tom-1{
+    width: 100%;
+    color: #010508;
+    font-weight: 500;
+    font-size: 15px;
+    box-sizing: border-box;}
+
+
+.tom-tom{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px 0 0 0}
+
+.bottom-bottom{width: 100%}
+
+.tom-2{
+    width: 100%;
+    font-weight: 500;
+    font-size: 15px;}
+
+.bottom-image{
+    width: 118px;
+    height: 123px;
+    margin: auto}
